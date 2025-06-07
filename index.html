@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upgrain - From Grain to Upgrain</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'upgrain-green': '#006837', // Dark green from logo
+                        'upgrain-yellow': '#FFCB05', // Yellow from logo
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom styles can go here if needed */
+        body { font-family: 'sans-serif'; } /* Basic font */
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="flex items-center">
+                <img src="assets/images/logo.png" alt="Upgrain Logo" class="h-12 mr-3">
+                <span class="font-bold text-2xl text-upgrain-green">Upgrain</span>
+            </a>
+            <div class="space-x-4">
+                <a href="#story" class="text-gray-600 hover:text-upgrain-green">Our Story</a>
+                <a href="products.html" class="text-gray-600 hover:text-upgrain-green">Products</a>
+                <a href="#about" class="text-gray-600 hover:text-upgrain-green">About Us</a>
+                <a href="#contact" class="text-gray-600 hover:text-upgrain-green">Contact</a>
+                <a href="#distribution" class="text-gray-600 hover:text-upgrain-green">Distribution</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-8">
+
+        <!-- Brand Story Section -->
+        <section id="story" class="my-12 p-8 bg-white rounded-lg shadow-lg">
+            <h2 class="text-3xl font-semibold text-upgrain-green mb-6">Our Story</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p class="text-gray-700 leading-relaxed">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <div class="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Placeholder for brand story images -->
+                <div class="bg-gray-200 h-48 rounded flex items-center justify-center text-gray-500">Image 1 Placeholder</div>
+                <div class="bg-gray-200 h-48 rounded flex items-center justify-center text-gray-500">Image 2 Placeholder</div>
+                <div class="bg-gray-200 h-48 rounded flex items-center justify-center text-gray-500">Image 3 Placeholder</div>
+            </div>
+        </section>
+
+        <!-- Featured Products Section -->
+        <section id="products" class="my-12 p-8 bg-white rounded-lg shadow-lg">
+            <h2 class="text-3xl font-semibold text-upgrain-green mb-6 text-center">Featured Products</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                <!-- Featured Product 1 -->
+                <div class="border p-6 rounded-lg shadow hover:shadow-xl transition-shadow flex flex-col items-center">
+                    <img src="assets/images/logo.png" alt="Chana - With Skin" class="rounded-md mb-4 h-48 w-full object-contain">
+                    <h3 class="text-xl font-semibold text-upgrain-green mb-2">Chana - With Skin</h3>
+                    <p class="text-gray-600 mb-4 text-center">Delicious and healthy chana with skin, packed with nutrients.</p>
+                    <a href="chana-with-skin.html" class="mt-auto bg-upgrain-yellow text-upgrain-green font-semibold py-2 px-4 rounded hover:bg-yellow-500 transition-colors">View Details</a>
+                </div>
+                <!-- Featured Product 2 -->
+                <div class="border p-6 rounded-lg shadow hover:shadow-xl transition-shadow flex flex-col items-center">
+                    <img src="assets/images/logo.png" alt="Organic Moong Dal" class="rounded-md mb-4 h-48 w-full object-contain">
+                    <h3 class="text-xl font-semibold text-upgrain-green mb-2">Organic Moong Dal</h3>
+                    <p class="text-gray-600 mb-4 text-center">Fresh and organic moong dal for a healthy and light meal.</p>
+                    <a href="organic-moong-dal.html" class="mt-auto bg-upgrain-yellow text-upgrain-green font-semibold py-2 px-4 rounded hover:bg-yellow-500 transition-colors">View Details</a>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="products.html" class="bg-upgrain-green text-white font-semibold py-3 px-8 rounded hover:bg-green-700 transition-colors text-lg">View All Our Products</a>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="my-12 p-8 bg-upgrain-green text-white rounded-lg shadow-lg">
+            <h2 class="text-3xl font-semibold mb-6">About Upgrain</h2>
+            <p class="leading-relaxed mb-4">
+                At Upgrain, we believe in providing the best quality food products directly from the source. Our commitment is to health, quality, and customer satisfaction.
+            </p>
+            <p class="leading-relaxed">
+                Founded with a passion for wholesome food, Upgrain aims to bring nature's best to your table. We work closely with farmers to ensure sustainable practices and premium produce.
+            </p>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact" class="my-12 p-8 bg-white rounded-lg shadow-lg">
+            <h2 class="text-3xl font-semibold text-upgrain-green mb-6">Contact Us</h2>
+            <p class="text-gray-700 leading-relaxed mb-2">Have questions or want to learn more? Reach out to us!</p>
+            <p class="text-gray-700"><strong class="text-upgrain-green">Email:</strong> info@upgrain.com (dummy)</p>
+            <p class="text-gray-700"><strong class="text-upgrain-green">Phone:</strong> +91-00000-00000 (dummy)</p>
+            <p class="text-gray-700 mt-4">Follow us on social media (links to be added).</p>
+        </section>
+
+        <!-- Distribution Section -->
+        <section id="distribution" class="my-12 p-8 bg-gray-100 rounded-lg shadow-lg">
+            <h2 class="text-3xl font-semibold text-upgrain-green mb-6">Become an Upgrain Distributor</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Interested in partnering with Upgrain and becoming a part of our distribution network? We are always looking for passionate individuals and businesses to help us bring quality food products to more people.
+            </p>
+            <p class="text-gray-700 leading-relaxed">
+                Please contact us at <a href="mailto:distribution@upgrain.com" class="text-upgrain-yellow hover:text-yellow-600">distribution@upgrain.com</a> (dummy) for more information on partnership opportunities.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-upgrain-green text-white text-center p-6 mt-12">
+        <p>&copy; <span id="currentYear"></span> Upgrain. All Rights Reserved.</p>
+        <p>From Grain to Upgrain</p>
+    </footer>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

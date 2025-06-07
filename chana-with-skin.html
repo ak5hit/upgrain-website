@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chana - With Skin - Upgrain</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'upgrain-green': '#006837',
+                        'upgrain-yellow': '#FFCB05',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'sans-serif'; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <img src="assets/images/logo.png" alt="Upgrain Logo" class="h-12 mr-3">
+                <span class="font-bold text-2xl text-upgrain-green">Upgrain</span>
+            </a>
+            <div class="space-x-4">
+                <a href="index.html#story" class="text-gray-600 hover:text-upgrain-green">Our Story</a>
+                <a href="products.html" class="text-gray-600 hover:text-upgrain-green">Products</a>
+                <a href="index.html#about" class="text-gray-600 hover:text-upgrain-green">About Us</a>
+                <a href="index.html#contact" class="text-gray-600 hover:text-upgrain-green">Contact</a>
+                <a href="index.html#distribution" class="text-gray-600 hover:text-upgrain-green">Distribution</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-8">
+        <section class="my-12 bg-white p-8 rounded-lg shadow-lg">
+            <!-- Product Title -->
+            <h1 class="text-4xl font-bold text-upgrain-green mb-6">Chana - With Skin</h1>
+
+            <!-- Image Gallery -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div class="col-span-1 md:col-span-2">
+                    <img src="assets/images/logo.png" alt="Chana - With Skin - Main View" class="rounded-lg shadow-md w-full h-auto object-contain p-4 border">
+                </div>
+                <img src="assets/images/logo.png" alt="Chana - With Skin - Detail 1" class="rounded-lg shadow-md w-full h-auto object-contain p-4 border">
+                <img src="assets/images/logo.png" alt="Chana - With Skin - Detail 2" class="rounded-lg shadow-md w-full h-auto object-contain p-4 border">
+            </div>
+
+            <!-- Product Description -->
+            <div class="mb-8">
+                <h2 class="text-2xl font-semibold text-upgrain-green mb-3">Product Details</h2>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    Our Chana (With Skin) is sourced from the finest farms, ensuring top quality and nutritional value. These chickpeas, also known as kala chana, are rich in protein, fiber, and essential minerals. They are perfect for a variety of Indian and international cuisines, including curries, salads, and snacks.
+                </p>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    The skin provides additional fiber, contributing to better digestion and overall health. Upgrain's Chana (With Skin) is unpolished and minimally processed to retain its natural goodness.
+                </p>
+                <ul class="list-disc list-inside text-gray-700 mb-4">
+                    <li>High in Protein</li>
+                    <li>Rich in Dietary Fiber</li>
+                    <li>Source of Iron and Folate</li>
+                    <li>Versatile for cooking</li>
+                    <li>100% Natural</li>
+                </ul>
+            </div>
+
+            <!-- E-commerce Links -->
+            <div>
+                <h2 class="text-2xl font-semibold text-upgrain-green mb-4">Where to Buy</h2>
+                <div class="space-y-3">
+                    <a href="#" target="_blank" class="inline-block bg-upgrain-yellow text-upgrain-green font-semibold py-3 px-6 rounded hover:bg-yellow-500 transition-colors text-lg mr-4">
+                        Buy on Amazon &rarr;
+                    </a>
+                    <a href="#" target="_blank" class="inline-block bg-upgrain-yellow text-upgrain-green font-semibold py-3 px-6 rounded hover:bg-yellow-500 transition-colors text-lg mr-4">
+                        Buy on Flipkart &rarr;
+                    </a>
+                    <a href="#" target="_blank" class="inline-block bg-upgrain-yellow text-upgrain-green font-semibold py-3 px-6 rounded hover:bg-yellow-500 transition-colors text-lg">
+                        Buy on BigBasket &rarr;
+                    </a>
+                </div>
+            </div>
+            <div class="mt-8">
+                 <a href="products.html" class="text-upgrain-green hover:text-upgrain-yellow font-medium">&larr; Back to All Products</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-upgrain-green text-white text-center p-6 mt-12">
+        <p>&copy; <span id="currentYear"></span> Upgrain. All Rights Reserved.</p>
+        <p>From Grain to Upgrain</p>
+    </footer>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

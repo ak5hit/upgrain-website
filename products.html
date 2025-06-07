@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - Upgrain</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'upgrain-green': '#006837',
+                        'upgrain-yellow': '#FFCB05',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'sans-serif'; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <img src="assets/images/logo.png" alt="Upgrain Logo" class="h-12 mr-3">
+                <span class="font-bold text-2xl text-upgrain-green">Upgrain</span>
+            </a>
+            <div class="space-x-4">
+                <a href="index.html#story" class="text-gray-600 hover:text-upgrain-green">Our Story</a>
+                <a href="products.html" class="text-upgrain-green font-semibold">Products</a>
+                <a href="index.html#about" class="text-gray-600 hover:text-upgrain-green">About Us</a>
+                <a href="index.html#contact" class="text-gray-600 hover:text-upgrain-green">Contact</a>
+                <a href="index.html#distribution" class="text-gray-600 hover:text-upgrain-green">Distribution</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-8">
+        <section id="all-products" class="my-12">
+            <h1 class="text-4xl font-bold text-upgrain-green mb-8 text-center">Our Products</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="bg-white border p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow flex flex-col">
+                    <img src="assets/images/logo.png" alt="Chana - With Skin" class="rounded-md mb-4 h-48 w-full object-contain">
+                    <h3 class="text-2xl font-semibold text-upgrain-green mb-2">Chana - With Skin</h3>
+                    <p class="text-gray-600 mb-4 flex-grow">Delicious and healthy chana with skin, packed with nutrients. Perfect for a variety of traditional and modern dishes.</p>
+                    <a href="chana-with-skin.html" class="mt-auto bg-upgrain-yellow text-upgrain-green font-semibold py-2 px-4 rounded hover:bg-yellow-500 transition-colors text-center">View Details</a>
+                </div>
+                <!-- Product 2 -->
+                <div class="bg-white border p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow flex flex-col">
+                    <img src="assets/images/logo.png" alt="Chana - Without Skin" class="rounded-md mb-4 h-48 w-full object-contain">
+                    <h3 class="text-2xl font-semibold text-upgrain-green mb-2">Chana - Without Skin</h3>
+                    <p class="text-gray-600 mb-4 flex-grow">Premium quality chana without skin, ideal for smooth curries, snacks, and salads. Easy to cook and digest.</p>
+                    <a href="chana-without-skin.html" class="mt-auto bg-upgrain-yellow text-upgrain-green font-semibold py-2 px-4 rounded hover:bg-yellow-500 transition-colors text-center">View Details</a>
+                </div>
+                <!-- Product 3 (Dummy) -->
+                <div class="bg-white border p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow flex flex-col">
+                    <img src="assets/images/logo.png" alt="Organic Moong Dal" class="rounded-md mb-4 h-48 w-full object-contain">
+                    <h3 class="text-2xl font-semibold text-upgrain-green mb-2">Organic Moong Dal</h3>
+                    <p class="text-gray-600 mb-4 flex-grow">Fresh and organic moong dal for a healthy and light meal. Sourced from the best farms.</p>
+                    <a href="organic-moong-dal.html" class="mt-auto bg-upgrain-yellow text-upgrain-green font-semibold py-2 px-4 rounded hover:bg-yellow-500 transition-colors text-center">View Details</a>
+                </div>
+                <!-- Add more products as needed -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-upgrain-green text-white text-center p-6 mt-12">
+        <p>&copy; <span id="currentYear"></span> Upgrain. All Rights Reserved.</p>
+        <p>From Grain to Upgrain</p>
+    </footer>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
